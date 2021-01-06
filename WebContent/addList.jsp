@@ -23,7 +23,7 @@
 </head>
 <body>
 
-	<form action="./add.jsp" method="get">
+	<form action="./add.jsp" method="post">
 		<table border="3" >
 		
 			<tr>
