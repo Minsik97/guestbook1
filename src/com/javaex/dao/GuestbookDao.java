@@ -73,13 +73,13 @@ public class GuestbookDao {
 		getConnection();
 
 		try {
-			String query = "insert into guestbook  values ( seq_no.nextval, ?, ?, ?, ?)";
+			String query = "insert into guestbook  values ( seq_no.nextval, ?, ?, ?, sysdate)";
 
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, guestbookVo.getName());
 			pstmt.setString(2, guestbookVo.getPassword());
 			pstmt.setString(3, guestbookVo.getContent());
-			pstmt.setString(4, guestbookVo.getRegDate());
+			
 
 			count = pstmt.executeUpdate();
 

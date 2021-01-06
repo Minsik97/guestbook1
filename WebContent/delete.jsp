@@ -10,8 +10,6 @@
 
 	int ex = guestbookDao.gbDelete(no, password);
 	
-	
-	
 %>
 
 
