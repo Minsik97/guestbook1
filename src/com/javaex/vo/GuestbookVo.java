@@ -12,6 +12,11 @@ public class GuestbookVo {
 	//생성자
 	public GuestbookVo() {}
 	
+	public GuestbookVo(int no, String password) {
+		this.no = no;
+		this.password = password;
+	}
+
 	public GuestbookVo(String name, String password, String content, String regDate) {
 		this.name = name;
 		this.password = password;
