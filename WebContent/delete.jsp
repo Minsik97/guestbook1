@@ -7,7 +7,6 @@
 	String password = request.getParameter("password");
 
 	GuestbookDao guestbookDao = new GuestbookDao();
-	GuestbookVo guestbookVo = new GuestbookVo(no, password);
 	int ex = guestbookDao.gbDelete(no, password);
 	
 	if( ex==1 ){
