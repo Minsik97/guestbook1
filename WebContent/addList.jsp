@@ -42,6 +42,7 @@
 			</tr>
 			
 		</table>
+		<br>
 	</form>
 	
 	
@@ -57,7 +58,6 @@
 				<td colspan="4"><%=guestbookList.get(i).getContent() %></td>
 			</tr>
 		</table>
-		
 		<br>
 	
 	<%}%>
